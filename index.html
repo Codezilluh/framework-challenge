@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="bg-gray-100 font-sans">
+		<div>
+			<div class="mx-auto max-w-6xl px-4 py-24">
+				<div class="flex flex-col items-center mb-16">
+					<img src="images/x_men_logo.png" alt="The X-Men logo" class="max-w-48 mb-6" />
+					<h1 class="block text-3xl font-bold text-gray-900">Xavier Institute Scholarship Fund Donation</h1>
+					<p class="mt-3 text-center px-36 text-gray-600">
+						Thank you for choosing to donate to the Xavier Institute Scholarship fund. For your support of our gifted youngsters, you will receive a
+						personalized thank you letter from Professor Charles Xavier himself!
+					</p>
+				</div>
+				<form>
+					<div class="border-b border-gray-900/10 pb-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+						<div class="flex flex-col md:col-span-1">
+							<div>
+								<h2 class="text-base/7 font-bold text-gray-900">Contact Information</h2>
+								<div class="mt-1 text-sm/6 text-gray-600">
+									Please provide contact information so that we may reach out to you regarding this donation.
+								</div>
+							</div>
+						</div>
+						<div class="flex-col md:col-span-2 gap-8 grid grid-cols-1 md:grid-cols-4 shadow-sm bg-white p-8 rounded-xl border border-gray-900/10">
+							<div class="grid grid-cols-1 md:col-span-4 md:grid-cols-2 gap-8">
+								<div class="flex flex-col">
+									<label for="first_name" class="block text-sm font-semibold text-gray-600">First Name *</label>
+									<input
+										type="text"
+										id="first_name"
+										name="first_name"
+										class="w-full mt-2 px-2 shadow-sm py-1 border border-gray-300 rounded-md" />
+								</div>
+								<div class="flex flex-col">
+									<label for="last_name" class="block text-sm font-semibold text-gray-600">Last Name *</label>
+									<input
+										type="text"
+										id="last_name"
+										name="last_name"
+										class="w-full mt-2 px-2 py-1 shadow-sm border border-gray-300 rounded-md" />
+								</div>
+							</div>
+							<div class="sm:col-span-3">
+								<label for="email" class="block text-sm font-semibold text-gray-600">Email Address *</label>
+								<input type="text" id="email" name="email" class="w-full mt-2 px-2 py-1 shadow-sm border border-gray-300 rounded-md" />
+							</div>
+						</div>
+					</div>
+					<div class="mt-10 border-b border-gray-900/10 pb-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+						<div class="flex flex-col md:col-span-1">
+							<div>
+								<h2 class="text-base/7 font-bold text-gray-900">Billing Information</h2>
+								<div class="mt-1 text-sm/6 text-gray-600">This information is needed to complete your donation to the scholarship fund.</div>
+							</div>
+						</div>
+						<div class="grid grid-cols-1 flex-col md:col-span-2 gap-8 md:grid-cols-4 shadow-sm bg-white p-8 rounded-xl border border-gray-900/10">
+							<div class="grid grid-cols-1 md:col-span-4 md:grid-cols-2 gap-x-8 gap-y-2">
+								<div class="flex flex-col">
+									<label for="first_name" class="block text-sm font-semibold text-gray-600">Card Holder First Name *</label>
+									<input
+										type="text"
+										id="first_name"
+										name="first_name"
+										class="w-full mt-2 px-2 py-1 shadow-sm border border-gray-300 rounded-md" />
+								</div>
+								<div class="flex flex-col">
+									<label for="last_name" class="block text-sm font-semibold text-gray-600">Card Holder Last Name *</label>
+									<input
+										type="text"
+										id="last_name"
+										name="last_name"
+										class="w-full mt-2 px-2 py-1 shadow-sm border border-gray-300 rounded-md" />
+								</div>
+								<div>
+									<input type="checkbox" id="same_as_contact" />
+									<label for="same_as_contact" class="text-sm font-normal text-gray-600 pl-2">Same as contact information</label>
+								</div>
+							</div>
+							<div class="sm:col-span-4">
+								<label for="billing_address" class="block text-sm font-semibold text-gray-600">Billing Address *</label>
+								<input
+									type="text"
+									id="billing_address"
+									name="billing_address"
+									class="w-full mt-2 px-2 py-1 shadow-sm border border-gray-300 rounded-md" />
+							</div>
+							<div class="grid grid-cols-1 md:col-span-4 md:grid-cols-3 gap-8">
+								<div class="flex flex-col">
+									<label for="billing_city" class="block text-sm font-semibold text-gray-600">City *</label>
+									<input
+										type="text"
+										id="billing_city"
+										name="billing_city"
+										class="w-full mt-2 px-2 py-1 shadow-sm border border-gray-300 rounded-md" />
+								</div>
+								<div class="flex flex-col">
+									<label for="billing_state" class="block text-sm font-semibold text-gray-600">State / Province *</label>
+									<input
+										type="text"
+										id="billing_state"
+										name="billing_state"
+										class="w-full mt-2 px-2 py-1 shadow-sm border border-gray-300 rounded-md" />
+								</div>
+								<div class="flex flex-col">
+									<label for="billing_zip" class="block text-sm font-semibold text-gray-600">Zip / Postal Code *</label>
+									<input
+										type="text"
+										id="billing_zip"
+										name="billing_zip"
+										class="w-full mt-2 px-2 py-1 shadow-sm border border-gray-300 rounded-md" />
+								</div>
+							</div>
+							<div class="sm:col-span-2">
+								<label for="billing_country" class="block text-sm font-semibold text-gray-600">Country *</label>
+								<select
+									type="text"
+									id="billing_country"
+									name="billing_country"
+									class="w-full mt-2 px-2 py-1 bg-white shadow-sm border border-gray-300 rounded-md">
+									<option value="US">United States</option>
+									<option value="CA">Canada</option>
+								</select>
+							</div>
+							<div class="grid grid-cols-1 md:col-span-4 md:grid-cols-4 gap-x-8 gap-y-2">
+								<div class="flex flex-col col-span-3">
+									<label for="billing_card" class="block text-sm font-semibold text-gray-600">Card Number *</label>
+									<input
+										type="text"
+										id="billing_card"
+										name="billing_card"
+										class="w-full mt-2 px-2 py-1 shadow-sm border border-gray-300 rounded-md" />
+								</div>
+								<div class="flex flex-col">
+									<label for="billing_cvv" class="block text-sm font-semibold text-gray-600">CCV / CVV *</label>
+									<input
+										type="text"
+										id="billing_cvv"
+										name="billing_cvv"
+										class="w-full mt-2 px-2 py-1 shadow-sm border border-gray-300 rounded-md" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mt-10 pb-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+						<div class="flex flex-col md:col-span-1">
+							<div>
+								<h2 class="text-base/7 font-bold text-gray-900">Donation</h2>
+								<div class="mt-1 text-sm/6 text-gray-600">
+									Let us know how much you would like to donate to the fund and leave a kind, pro-mutant message if you wish!
+								</div>
+							</div>
+						</div>
+						<div class="flex-col md:col-span-2 gap-8 grid grid-cols-1 md:grid-cols-6 shadow-sm bg-white p-8 rounded-xl border border-gray-900/10">
+							<div class="sm:col-span-2">
+								<label for="usd" class="block text-sm font-semibold text-gray-600">Donation Amount (in USD) *</label>
+								<div class="flex items-center gap-2 mt-2 leading-none">
+									<span class="font-semibold">$</span>
+									<input
+										type="text"
+										id="usd"
+										placeholder="100,000"
+										name="usd"
+										class="w-full px-2 py-1 shadow-sm border border-gray-300 rounded-md" />
+								</div>
+							</div>
+							<div class="sm:col-span-6">
+								<label for="usd" class="block text-sm font-semibold text-gray-600">Kind Message (Optional)</label>
+								<textarea type="text" id="usd" name="usd" class="w-full mt-2 p-2 shadow-sm border border-gray-300 rounded-md"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="flex justify-center">
+						<button type="button" class="font-semibold text-gray-900 px-6 py-2 rounded-md bg-blue-600 shadow-sm text-white">Send Donation</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
